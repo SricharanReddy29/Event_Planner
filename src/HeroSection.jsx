@@ -4,7 +4,7 @@ function HeroSection() {
     return (
       <div>
         <h1>Google Maps</h1>
-        <Map />
+        {/* <Map /> */}
       </div>
     );
   }

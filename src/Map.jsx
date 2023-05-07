@@ -3,7 +3,7 @@ import { Loader } from "@googlemaps/js-api-loader";
 
 function Map() {
   const loader = new Loader({
-    apiKey: "YOUR_API_KEY",
+    apiKey: import.meta.env.VITE_MAP_API,
     version: "weekly",
   });
 
@@ -14,7 +14,7 @@ function Map() {
     });
   });
 
-  return <div id="map" style={{ height: "400px" }} />;
+  return <section id="map" style={{ height: "400px" }} />;
 }
 
 export default Map;

@@ -1,7 +1,13 @@
 import { FiMenu } from "react-icons/fi";
 import Sidebar from "./Sidebar";
 import  Location  from "./Location";
+import { useAuth } from "./AuthProvider";
 const Header = ({name}) => {
+  const {logout}=useAuth();
+
+  const handlelogout=async()=>{
+    await logout()
+  }
   return (
     <header className="flex justify-between items-center py-3 px-6  bg-gradient-to-r from-cyan-500 to-blue-500">
      
@@ -23,7 +29,7 @@ const Header = ({name}) => {
     </div>
 </div>
 <button
-    className=" rounded-xl text-lg text-slate-800 bg-orange-600 hover:bg-orange-400 text-center p-2 transition-all  w-80 shadow-lg shadow-slate-900"
+    className=" rounded-lg text-lg text-slate-800 bg-orange-600 hover:bg-orange-400 text-center p-2 transition-all  w-25  "
     onClick={handlelogout}
         >
           LogOut

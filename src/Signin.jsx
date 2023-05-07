@@ -70,7 +70,7 @@ const SignIn = () => {
           {err}
         </h1>
       ) : null}
-    </main>): (< Navigate to='/profile'/>)
+    </main>): (< Navigate to='/Profile'/>)
      
 };
 
