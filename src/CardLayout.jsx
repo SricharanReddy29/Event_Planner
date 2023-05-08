@@ -13,7 +13,7 @@ function CardLayout() {
               <p className="text-gray-700 text-base">Cost</p>
                    <p className="text-gray-700 text-base">Location:Hyderabad</p>
               <p className="text-gray-700 text-base">More details</p>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Book Now</button>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Check Availability</button>
             </div>
           </div>
         </div>
@@ -25,7 +25,7 @@ function CardLayout() {
               <p className="text-gray-700 text-base">Cost :</p>
               <p className="text-gray-700 text-base">Location : hyderabad</p>
               <p className="text-gray-700 text-base"><u>More details</u></p>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Book Now</button>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Check Availability</button>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ function CardLayout() {
               <p className="text-gray-700 text-base">Cost :</p>
               <p className="text-gray-700 text-base">Location :hyderabad</p>
               <p className="text-gray-700 text-base"><u>More details</u></p>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Book Now</button>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Check Availability</button>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ function CardLayout() {
               <p className="text-gray-700 text-base">Cost :</p>
               <p className="text-gray-700 text-base">Location :</p>
               <p className="text-gray-700 text-base"><u>More details</u></p>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Book Now</button>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Check Availability</button>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ function CardLayout() {
               <p className="text-gray-700 text-base">Cost :</p>
               <p className="text-gray-700 text-base">Location :</p>
               <p className="text-gray-700 text-base"><u>More details</u></p>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Book Now</button>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Check Availability</button>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@ function CardLayout() {
               <p className="text-gray-700 text-base">Cost :</p>
               <p className="text-gray-700 text-base">Location :</p>
               <p className="text-gray-700 text-base"><u>More details</u></p>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Book Now</button>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Check Availability</button>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ function CardLayout() {
               <p className="text-gray-700 text-base">Cost :</p>
               <p className="text-gray-700 text-base">Location :</p>
               <p className="text-gray-700 text-base"><u>More details</u></p>
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Book Now</button>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Check Availability</button>
             </div>
           </div>
         </div>
