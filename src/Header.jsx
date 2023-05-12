@@ -9,7 +9,7 @@ const Header = ({name}) => {
     await logout()
   }
   return (
-    <header className="flex justify-between items-center py-3 px-6  bg-gradient-to-r from-cyan-500 to-blue-500">
+    <header className="flex justify-between items-center py-3 px-6  bg-blue-500">
      
       <div>
         {/* Logo or website title here */}

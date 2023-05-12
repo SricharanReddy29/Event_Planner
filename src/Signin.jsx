@@ -2,24 +2,36 @@ import React from "react";
 import { useRef, useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import { useAuth } from "./AuthProvider";
+import { useContent } from "./ContProvider";
+import axios from 'axios';
+
 const SignIn = () => {
 
   const user = useRef("");
   const pass = useRef("");
   const [err, setErr] = useState();
   const {signin,curruser}=useAuth();
-
+  const {setData}=useContent();
+  const [loading,setLoading]=useState(false);
   const handlesubmit = async () => {
     try {
+      setLoading(true);
       setErr("");
       //console.log(`${user.current.value} ${pass.current.value}`);
       await signin(user.current.value, pass.current.value);
       user.current.value = "";
       pass.current.value = "";
+        
+     
+
+      setLoading(false);
     } catch (err) {
       console.log(err);
       setErr("User not found");
     }
+
+    
+
   };
 
   return  !curruser?(<main className="flex flex-col min-h-screen bg-black items-center justify-center text-center border-8 border-yellow-500 ">
@@ -70,7 +82,7 @@ const SignIn = () => {
           {err}
         </h1>
       ) : null}
-    </main>): (< Navigate to='/Profile'/>)
+    </main>): !loading?(< Navigate to='/Profile'/>):<h1>Loading...</h1>
      
 };
 

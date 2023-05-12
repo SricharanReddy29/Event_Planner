@@ -11,8 +11,8 @@ const Profile = () => {
   return (
     curruser?<main>
          <Header name={curruser.email}/> 
-         <HeroSection/>
-         <CardLayout/>
+        {/*  <HeroSection/> */}
+         <CardLayout />
          <Footer/>
     </main>:<Navigate to='/'/>
   )
