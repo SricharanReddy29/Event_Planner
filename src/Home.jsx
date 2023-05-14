@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <main className=" min-h-screen bg-slate-900 overflow-x-hidden">
-      <div className="flex flex-col h-screen items-center justify-center flex-nowrap bgimg  z-50">
-        <h1 className="xl:text-7xl lg:text-6xl text-4xl bg-gradient-to-r from-blue-500 via-indigo-500 to-sky-500 bg-clip-text text-transparent font-michroma font-bold mb-10 -mt-5 mx-2 z-50 ">
+      <div className="flex flex-col h-screen items-center justify-center flex-nowrap   z-50">
+        <h1 className=" text-7xl bg-gradient-to-r from-blue-500 via-indigo-500 to-sky-500 bg-clip-text text-transparent font-michroma font-bold mb-10 -mt-5 mx-2 z-50 ">
           EVENT PLANNER
         </h1>
 
@@ -17,7 +17,7 @@ const Home = () => {
             {" "}
             Don't Worry! Just Relax{" "}
             <font className=" md:text-5xl text-3xl font-Proxima-Nova text-fuchsia-100	 font-extrabold font-outfit">
-              We Got You
+              You're Heard
             </font>
           </h1>
           <p className="mb-8 lg:text-lg text-slate-400 font-outfit text-sm">

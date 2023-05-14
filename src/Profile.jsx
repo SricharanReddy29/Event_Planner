@@ -9,9 +9,8 @@ import HeroSection from './HeroSection'
 const Profile = () => {
     const {curruser}=useAuth();
   return (
-    curruser?<main>
+    curruser?<main className='m-0'>
          <Header name={curruser.email}/> 
-        {/*  <HeroSection/> */}
          <CardLayout />
          <Footer/>
     </main>:<Navigate to='/'/>

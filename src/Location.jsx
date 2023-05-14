@@ -29,7 +29,7 @@ function Head() {
     return (
       <header className="flex justify-between items-center">
         <button
-          className="flex items-center space-x-2 text-lg text-slate-200 hover:text-sky-900"
+          className="flex items-center space-x-2 text-lg text-white hover:text-sky-900"
           onClick={handleLocation}
         >
           <FiMapPin />

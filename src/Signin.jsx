@@ -19,7 +19,7 @@ const SignIn = () => {
       setErr("");
       //console.log(`${user.current.value} ${pass.current.value}`);
       await signin(user.current.value, pass.current.value);
-      user.current.value = "";
+     
       pass.current.value = "";
         
      
@@ -30,20 +30,14 @@ const SignIn = () => {
       setErr("User not found");
     }
 
-    
-
   };
 
-  return  !curruser?(<main className="flex flex-col min-h-screen bg-black items-center justify-center text-center border-8 border-yellow-500 ">
-      <img
-        src="https://skillicons.dev/icons?i=firebase"
-        alt="firebase"
-        className=" w-auto h-auto"
-      />
-      <h1 className="text-5xl text-yellow-500 ">Sign In</h1>
-   {/*    {curruser ? (
-        <h1 className="text-xl text-yellow-600 m-1">{curruser.email}</h1>
-      ) : null} */}
+  return  !curruser?(<main className="flex flex-col min-h-screen bg-blue-950 items-center justify-center text-center  ">
+    <div className="text-5xl text-white">
+    <b>Event Planner</b>
+    </div>
+      <h1 className="text-4xl text-blue-300 ">Sign In</h1>
+
       <form
         action=""
         className="my-5 flex flex-col justify-center items-center"
@@ -51,7 +45,7 @@ const SignIn = () => {
         <input
           type="Email"
           placeholder="email address"
-          className=" bg-slate-950 text-lg placeholder:text-slate-40 text-yellow-500 p-2  w-80 border-x border-y border-orange-700 focus:outline-none focus:ring-1 focus:ring-sky-50 rounded-lg"
+          className=" bg-slate-950 text-lg placeholder:text-slate-40 text-yellow-500 p-2  w-80 border-x border-y focus:outline-none rounded-lg"
           autoComplete="off"
           ref={user}
           required
@@ -59,7 +53,7 @@ const SignIn = () => {
         <input
           type="password"
           placeholder="Password"
-          className=" bg-slate-950 text-lg placeholder:text-slate-40 text-yellow-500 p-2  w-80 border-x border-y border-orange-700 focus:outline-none focus:ring-yellow-500 m-1 rounded-lg"
+          className=" bg-slate-950 text-lg placeholder:text-slate-40 text-white p-2  w-80 border-x border-y  focus:outline-none  m-1 rounded-lg"
           autoComplete="off"
           ref={pass}
           required
@@ -68,7 +62,7 @@ const SignIn = () => {
         <input
           type="button"
           value="Sign In"
-          className=" rounded-xl text-lg text-slate-800 bg-orange-600 hover:bg-orange-500 text-center p-2 transition-all  w-80 shadow-lg shadow-slate-900"
+          className=" rounded-xl text-lg text-slate-800 bg-blue-300 hover:bg-green-500 text-center p-2 transition-all  w-80 shadow-lg shadow-slate-900"
           onClick={handlesubmit}
         />
 
@@ -82,7 +76,17 @@ const SignIn = () => {
           {err}
         </h1>
       ) : null}
-    </main>): !loading?(< Navigate to='/Profile'/>):<h1>Loading...</h1>
+    </main>):!loading ? (
+  
+    user.current.value.includes(".org") ? (
+      <Navigate to="/OrgProfile" />
+    ) : (
+      <Navigate to="/Profile" />
+    )
+  
+) : (
+  <h1>Loading...</h1>
+);
      
 };
 

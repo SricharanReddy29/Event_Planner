@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AuthProvider from "./AuthProvider";
 import './index.css'
 import ContProvider from "./ContProvider";
-import venueInfo from "./VenueInfo";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
